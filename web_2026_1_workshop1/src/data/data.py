@@ -48,6 +48,7 @@ class Data:
 
         return resultado
 
+
     def rotar_lista(self, lista, k):
         if not lista:
             return []
@@ -144,3 +145,5 @@ class Data:
             transpuesta.append(nueva_fila)
 
         return transpuesta
+    
+    

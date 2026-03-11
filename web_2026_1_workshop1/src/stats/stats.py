@@ -64,3 +64,5 @@ class Stats:
         if len(numeros) == 0:
             return 0
         return max(numeros) - min(numeros)
+    
+    
