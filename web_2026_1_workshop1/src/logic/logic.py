@@ -28,3 +28,5 @@ class Logica:
     def bi_implicacion(self, a, b):
         # a <-> b es verdadero cuando ambos son iguales
         return a == b
+    
+    
