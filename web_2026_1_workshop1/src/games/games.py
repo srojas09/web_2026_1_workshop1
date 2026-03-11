@@ -57,7 +57,7 @@ class Games:
         if hay_espacios:
             return "continua"
 
-        return "empate"
+        return "Empate"
 
     def generar_combinacion_mastermind(self, longitud, colores_disponibles):
         return [random.choice(colores_disponibles) for _ in range(longitud)]
