@@ -14,10 +14,6 @@ class Matrix:
         return True
 
 
-    # -------------------------
-    # OPERACIONES BÁSICAS
-    # -------------------------
-
     def suma_matrices(self, A, B):
         if not self._es_matriz_valida(A) or not self._es_matriz_valida(B):
             raise ValueError("Matriz inválida")
@@ -71,10 +67,6 @@ class Matrix:
             resultado.append(nueva_fila)
         return resultado
 
-
-    # -------------------------
-    # PROPIEDADES
-    # -------------------------
 
     def transpuesta(self, matriz):
         if not matriz:
@@ -157,7 +149,7 @@ class Matrix:
 
     def diagonal(self, matriz):
         if not self.es_cuadrada(matriz):
-            raise ValueError("No es cuadrada")
+            raise ValueError("No es Cuadrada")
         resultado = []
         for i in range(len(matriz)):
             resultado.append(matriz[i][i])
@@ -194,3 +186,5 @@ class Matrix:
                 if matriz[i][j] == valor:
                     posiciones.append((i, j))
         return posiciones
+    
+    
